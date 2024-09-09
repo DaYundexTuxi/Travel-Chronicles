@@ -10,4 +10,4 @@
 - **Route Evaluation**: Rated by difficulty, scenery, and popularity.
 
 *Travel Chronicles* makes route planning and navigation engaging and convenient, connecting travelers through shared experiences and recommendations.
-```
+
