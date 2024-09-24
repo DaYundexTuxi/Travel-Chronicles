@@ -3,7 +3,12 @@ body {
 }
 
 .header_thing {
-    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.header_thing:hover {
+    background-color: blue;
 }
 
 main {

@@ -8,24 +8,38 @@
     display: flex;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border: 5px solid tomato;
+    border: 5px solid dodgerblue;
     border-radius: 5px;
     transition: transform 0.4s, box-shadow 0.4s;
+    
 }
 
 img {
     width: 250px;
     height: 250px;
+    
 }
 
-.card1 {
+.card {
     display: grid;
     text-align: left;
-    padding: 20px;
-    max-width: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 30%;
 }
 
 .grid-item:hover {
     transform: translateY(10px);
-    box-shadow: 0px 8px 16px salmon;
+    box-shadow: 0px 8px 16px blue;
+}
+
+.grid-item button {
+    width: 100px;
+    height: 25px;
+    background-color: lightgray;
+    transition: background-color 0.4s;
+}
+
+button:hover {
+    background-color: lightblue;
 }
