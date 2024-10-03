@@ -2,16 +2,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FEFAE0;
 }
 
 .header-container {
     display: inline-block;
-    background-color: lightcyan;
-    padding-left: 2px;
-    padding-bottom: 10px;   
+    background-color: #E0E5B6;    
+    padding-bottom: 10px;
     width: 100%;
     text-align: center;
     transition: background-color 0.4s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 .header-container:hover {
@@ -26,6 +27,10 @@ main {
 .dropdown {
     position: relative;
     display: inline-block;
+}
+
+.dropdown a {
+    text-decoration: none;
 }
 
 .dropdown-content {
@@ -47,9 +52,7 @@ main {
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+.dropdown:hover .dropdown-content {display: block;}
 
 aside {
     padding-left: 5px;
@@ -59,8 +62,8 @@ aside {
     height: 75%;
     width: 15%;
     transition: background-color 0.4s;
-    background-color: lightcyan;
-    border-left: 5px solid blue;
+    background-color: #E0E5B6;
+    border-left: 5px solid #798645;
 }
 
 aside:hover {
@@ -69,11 +72,14 @@ aside:hover {
 
 footer {
     position: absolute;
-    background-color: lightgrey;
+    background-color: #CCD5AE;
     left: 0;
     bottom: 0;
-    padding: 5px;
     width: 100%;
+}
+
+.footer-container {
+    padding: 12px;
 }
 
 @media screen and (max-width: 768px) {
