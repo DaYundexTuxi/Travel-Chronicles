@@ -7,6 +7,18 @@ body {
     transition: background-color 0.4s, color 0.4s;
 }
 
+/* Keyframe animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Start by moving the main element 30px down */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Return to the original position */
+    }
+}
+
 /* main part */
 main {
     display: inline-block;
@@ -18,9 +30,12 @@ main {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     transition: background-color 0.4s;
+
+    /* Applying the fade-in animation to the entire main section */
+    opacity: 0; /* Hidden initially */
+    animation: fadeInUp 2s ease-out forwards; /* Trigger the fadeInUp animation */
 }
 
-/* header related */
 .header-container {
     display: inline-block;
     background-color: #A0DEFF;
@@ -50,7 +65,6 @@ nav a {
 nav:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
-
 
 .dropdown {
     position: relative;
@@ -190,68 +204,3 @@ footer {
         bottom: 0;
     }
 }
-
-/*
-.dark-mode-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-}
-
-
-#dark-mode-toggle:checked ~ body {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-#dark-mode-toggle:checked ~ main {
-    background-color: #333;
-}
-
-#dark-mode-toggle:checked ~ .header-container {
-    background-color: #333;
-}
-
-#dark-mode-toggle:checked ~ nav a {
-    color: #e0e0e0;
-}
-
-#dark-mode-toggle:checked ~ .dropdown-content {
-    background-color: #444;
-}
-
-#dark-mode-toggle:checked ~ .dropdown-content a {
-    color: #e0e0e0;
-}
-
-#dark-mode-toggle:checked ~ .dropdown-content a:hover {
-    background-color: #555;
-}
-
-#dark-mode-toggle:checked ~ aside {
-    background-color: #333;
-    border-left: 5px solid #555;
-}
-
-#dark-mode-toggle:checked ~ footer {
-    background-color: #333;
-}
-
-#dark-mode-toggle {
-    display: none;
-}
-
-.dark-mode-label {
-    cursor: pointer;
-    padding: 8px;
-    background-color: #A0DEFF;
-    border-radius: 5px;
-    color: black;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.dark-mode-label i {
-    margin-right: 5px;
-}
-*/

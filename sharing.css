@@ -8,18 +8,58 @@ body {
 }
 
 /* main part */
+/* main part - Sharing related */
 main {
-    display: inline-block;
-    max-width: 60%;
-    margin-left: 40%;
-    margin-right: auto;
-    margin-top: 2%;
-    background-color: #A0DEFF;
-    padding: 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    transition: background-color 0.4s;  
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 3%;
+    background-color: #E8F6FF; /* Светло-голубой фон для sharing */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.4s, box-shadow 0.4s;
 }
+
+main:hover {
+    background-color: #D0EBFF; /* Слегка измененный цвет при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.sharing-buttons button {
+    background-color: #007BFF; /* Синий цвет для кнопок */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.sharing-buttons button:hover {
+    background-color: #0056b3; /* Более темный синий при наведении */
+}
+
+.sharing-buttons input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sharing-buttons button i {
+    margin-right: 5px;
+}
+
+.sharing-buttons {
+    margin-top: 20px;
+}
+
 
 /* header related */
 .header-container {
