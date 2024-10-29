@@ -166,6 +166,8 @@ footer {
     }
 
     footer {
+        left: 0;
+        bottom: 0;
         position: fixed;
         width: 100%;
     }
@@ -200,7 +202,9 @@ footer {
     }
 
     footer {
-        position: static;
+        left: 0;
         bottom: 0;
+        position: fixed;
+        width: 100%;
     }
 }
